@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inferensial Statistik</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="button">← Kembali</a>
+      <h1>Confidence Interval</h1>
+    </nav>
+
+    <main class="container">
+      <section class="card">
+        <h2>Masukkan Data</h2>
+        <label>Mean Sampel (x̄):</label>
+        <input type="number" id="sampleMean" placeholder="Contoh: 60" />
+        <label>Standard Deviasi Populasi (σ):</label>
+        <input type="number" id="stdDev" placeholder="Contoh: 10" />
+        <label>Ukuran Sampel (n):</label>
+        <input type="number" id="sampleSize" placeholder="Contoh: 30" />
+        <label>Tingkat Kepercayaan (%):</label>
+        <select id="confidenceLevel">
+          <option value="90">90%</option>
+          <option value="95" selected>95%</option>
+          <option value="99">99%</option>
+        </select>
+        <button class="button" id="calculateBtn">Hitung</button>
+      </section>
+
+      <section class="card">
+        <h2>Hasil</h2>
+        <div id="inferentialResults">Belum ada hasil.</div>
+        <canvas id="ciChart" width="600" height="300" style="margin-top: 2rem"></canvas>
+      </section>
+    </main>
+
+    <script src="js/inferential.js"></script>
+  </body>
+</html>

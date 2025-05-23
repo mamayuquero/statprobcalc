@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Regresi dan Korelasi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="button">← Kembali</a>
+      <h1>Regresi & Korelasi</h1>
+    </nav>
+
+    <main class="container">
+      <section class="card">
+        <h2>Masukkan Data X dan Y</h2>
+        <label>Data X (pisahkan dengan koma):</label>
+        <input type="text" id="dataX" placeholder="Contoh: 1,2,3,4,5" />
+        <label>Data Y (pisahkan dengan koma):</label>
+        <input type="text" id="dataY" placeholder="Contoh: 2,4,5,4,5" />
+        <button class="button" id="calculateBtn">Hitung</button>
+      </section>
+
+      <section class="card">
+        <h2>Hasil</h2>
+        <div id="regressionResults">Belum ada hasil.</div>
+        <canvas id="regressionChart" width="600" height="350" style="margin-top: 2rem"></canvas>
+      </section>
+    </main>
+
+    <script src="js/regression.js"></script>
+  </body>
+</html>
