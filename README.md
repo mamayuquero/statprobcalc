@@ -1,1 +1,1 @@
-# statprobcalc
+# statprobcalc for statistic project
